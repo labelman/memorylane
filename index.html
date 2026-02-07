@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Lane Films - Preserve Your Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 0 auto 30px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Main Content */
+        section {
+            padding: 60px 20px;
+            background: #fff;
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: 400;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+        }
+
+        .about-text {
+            font-size: 1.15em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Video Section */
+        .video-container {
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Services */
+        .services {
+            background: #f8f8f8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 400;
+            color: #1a1a1a;
+        }
+
+        .service-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Contact Form */
+        .contact {
+            background: #fff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-family: 'Georgia', serif;
+            font-size: 1em;
+            background: #fafafa;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #666;
+            background: #fff;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button {
+            background: #2c2c2c;
+            color: #fff;
+            padding: 15px 40px;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1a1a1a;
+        }
+
+        .email-contact {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .email-contact a {
+            color: #2c2c2c;
+            text-decoration: none;
+            border-bottom: 1px solid #2c2c2c;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #2c2c2c;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .about-text {
+                font-size: 1.05em;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Memory_Lane_Logo.jpeg" alt="Memory Lane Films">
+            </div>
+            <h1>MEMORY LANE FILMS</h1>
+            <p class="tagline">Preserving stories that last forever</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>What We Do</h2>
+            <p class="about-text">
+                We take your archival material and conduct interviews with the people in your life to create memorial 
+                and commemorative short films in an august and tasteful style. Working closely with you, we craft films 
+                that move audiences and honor the people and institutions that matter most.
+            </p>
+            <p class="about-text">
+                Whether you're celebrating a milestone, honoring a legacy, or commemorating a special occasion, 
+                our films add gravity and spectacle to your event. Using the latest techniques to bring historical 
+                material alive, we create something that will endure—a testament that lasts forever.
+            </p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="video-container">
+                <video controls poster="">
+                    <source src="Memory_Lane_Sample.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Memorial Films</h3>
+                    <p>Honor the life and legacy of loved ones with a beautifully crafted documentary that celebrates their story.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Commemorative Films</h3>
+                    <p>Mark significant milestones for individuals or institutions with films that capture the journey and impact.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Event Features</h3>
+                    <p>Add depth and emotion to celebrations, reunions, or special occasions with custom documentary features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your project</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="email-contact">
+                Or email us directly at <a href="mailto:memorylanefilms@gmail.com">memorylanefilms@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Memory Lane Films. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic form handling (you'll need to connect this to an actual email service)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // For now, this creates a mailto link
+            const subject = encodeURIComponent('Memory Lane Films Inquiry from ' + name);
+            const body = encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            
+            window.location.href = 'mailto:memorylanefilms@gmail.com?subject=' + subject + '&body=' + body;
+        });
+    </script>
+</body>
+</html>
